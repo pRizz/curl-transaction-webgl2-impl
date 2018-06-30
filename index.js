@@ -5,8 +5,8 @@ const nonceLength = 81
 const trytesLessNonce = trytesLength - nonceLength
 
 async function pow({ trytes, minWeightMagnitude }) {
-    const processedTrytes = await curl.pow({trytes, minWeight: minWeightMagnitude})
-    return processedTrytes.substr(0, trytesLessNonce).concat(nonce)
+    const nonce = await curl.pow({ trytes, minWeight: minWeightMagnitude })
+    return trytes.substr(0, trytesLessNonce).concat(nonce)
 }
 
 let error = null

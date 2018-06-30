@@ -1,6 +1,6 @@
 {
   "name": "curl-transaction-webgl2-impl",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "WebGL2 implementation for curl-transaction-core",
   "main": "index.js",
   "scripts": {
